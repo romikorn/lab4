@@ -302,27 +302,3 @@ obj_cruiser.print_info()
 print("Самолет Fighter наносит урон самолету HeavyBomber в течение 10 секунд")
 obj_heavybomber.receive_damage(obj_fighter.attack(10))
 obj_heavybomber.print_info()
-
-
-
-
-'''destroyer1 = Destroyer()
-destroyer1.print_info()
-print(f"{destroyer1.attack(3)}")
-
-cruiser1 = Cruiser()
-#cruiser1.launch_torpedo(2)
-cruiser1.print_info()
-
-destroyer1.current_hp(cruiser1.launch_torpedo(4))
-print(f"{destroyer1.hp}")
-
-lightbomber1 = LightBomber()
-lightbomber1.print_info()
-
-
-
-#print(f"{cruiser1.attack_damage(4)}")
-#cruiser1.print_info(Cruiser)
-#Cruiser = Ship(10, 30, 7.5, 100)
-#print(f"{Ship.width}")'''
