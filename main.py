@@ -25,7 +25,7 @@ class Ship:
         return self.hp
 
     def sailing_distance(self, time):
-        return self.speed*time
+        return self.speed*time/3.6
 
     def print_info(self):
         print(f"Ширина:{self.width} Длина:{self.length} Водоизмещение:{self.displacement} Скорость: {self.speed}  Здоровье: {self.hp} Урон в секунду: {self.damage_per_second}")
@@ -58,7 +58,7 @@ class Plane:
         return self.hp
 
     def flying_distance(self, time):
-        return self.speed*time
+        return self.speed*time/3.6
 
     def print_info(self):
         print(f"Размах крыльев:{self.wingspan} Длина:{self.length} Вec:{self.weight} Скорость: {self.speed} Здоровье: {self.hp} Урон в секунду: {self.damage_per_second}")
@@ -302,3 +302,5 @@ obj_cruiser.print_info()
 print("Самолет Fighter наносит урон самолету HeavyBomber в течение 10 секунд")
 obj_heavybomber.receive_damage(obj_fighter.attack(10))
 obj_heavybomber.print_info()
+print(f"Самолет Fighter летит в течение 10 секунд и пролетает расстояние {obj_fighter.flying_distance(10)} метр")
+print(f"Корабль Destroyer плывет в течение 30 секунд и проплывает расстояние {obj_destroyer.sailing_distance(30)} метров")
